@@ -5,32 +5,25 @@
 #            b = 1 (7>2)
 # Buat program seperti itu
 
-a = []
-b = []
+def Func(a, b):
+    hasil_a = 0
+    hasil_b = 0
 
-x = input("Masukkan angka a: ").split()
-y = input("Masukkan angka b: ").split()
-i = list(map(int, x))
-j = list(map(int, y))
+    for i in range(len(a)):
+        if a[i] > b[i]:
+            print(f"{a[i]} > {b[i]}")
+            hasil_a += 1
+        elif a[i] < b[i]:
+            hasil_b += 1
+    print(f"\nList a = {a}")
+    print(f"List b = {b}")
 
-a.extend(i)
-b.extend(j)
+    print(f"\nHasil a = {hasil_a}")
+    print(f"Hasil b = {hasil_b}\n")
 
-print(f"List a = {a}")
-print(f"List b = {b}")
-print(" ")
+if __name__ == '__main__':
+    x = list(map(int, input("Masukkan angka a: ").rstrip().split()))
+    y = list(map(int, input("Masukkan angka b: ").rstrip().split()))
 
-hasil_a = 0
-hasil_b = 0
-
-for i in range(len(a)):
-    if a[i] > b[i]:
-        print(f"{a[i]} > {b[i]}")
-        hasil_a += 1
-    elif a[i] < b[i]:
-        hasil_b += 1
-
-
-print(f"\nHasil a = {hasil_a}")
-print(f"Hasil b = {hasil_b}\n")
+    Func(x, y)
 
