@@ -3,15 +3,22 @@ using namespace std;
 
 int main(){
 	
+	// #ifndef Abdul
+	// 	freopen("input.txt", "r", stdin);
+	// 	freopen("output.txt", "w", stdout);
+	// #endif
+
 	int hasil;
-	int x[6];
-	
-	for(int i=0; i < 6; i++){
-		int k;
-		cout << "Masukkan Angka : ";
-		cin >> k;
-		x[i] = k;
-		hasil = hasil + x[i];
+	int x;
+	cout << "Size: ";
+	cin >> x;
+
+	int* k = new int[x];
+
+	cout << "Masukkan Angka: ";
+	for(int i=0; i < x; i++){
+		cin >> k[i];
+		hasil = hasil + k[i];
 	}
 	
 	cout << hasil << endl;
