@@ -21,7 +21,21 @@ int main(){
 		hasil = hasil + k[i];
 	}
 	
-	cout << hasil << endl;
+	cout << endl;
+	cout << "Array = ";
+	cout << "[";
+	for(int i=0; i < x; i++){
+		if(i == x - 1){
+			cout << k[i];
+		}
+		else{
+			cout << k[i] << ", ";
+		}
+	}
+	cout << "]";
+	cout << endl;
+
+	cout << "Hasil == > " << hasil << endl;
 	cout << "\nAkhir Program" << endl;
 	return 0;
 }
