@@ -1,2 +1,2 @@
-I made the code program by myself, 'cause actually HackerRank has its own template
+HackerRank has its own template, so i recreate the code myself
 
