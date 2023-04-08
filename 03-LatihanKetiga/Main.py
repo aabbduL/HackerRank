@@ -12,12 +12,12 @@ def Func(arr):
     print(f"Output => {abs(d1-d2)}\n")
 
 if __name__ == '__main__':
-    n = int(input("Masukkan jumlah baris matrix: ").strip())
+    n = int(input("Masukkan jumlah baris matrix (max 3): ").strip())
 
     arr = []
 
-    for _ in range(n):
-        arr.append(list(map(int, input("Masukkan angka: ").rstrip().split())))
+    for i in range(n):
+        arr.append(list(map(int, input(f"Masukkan angka untuk baris {i+1}: ").rstrip().split())))
     
     Func(arr)
 
