@@ -28,14 +28,12 @@ void Func(vector<vector<int>> arr) {
 }
 
 int main() {
-    int n;
-    cout << "Masukkan jumlah baris matrix (max 3): ";
-    cin >> n;
+    int n = 3;
 
     vector<vector<int>> arr(n, vector<int>(n));
 
     for (int i = 0; i < n; i++) {
-        cout << "Masukkan angka untuk baris " << i+1 << ": ";
+        cout << "Masukkan angka untuk baris " << "("<<i+1<<")"<< " : ";
         for (int j = 0; j < n; j++) {
             cin >> arr[i][j];
         }
