@@ -12,7 +12,7 @@ def plusMinus(arr):
 if __name__ == '__main__':
     n = int(input("Masukan berapa banyak bilangan bulat yang diinginkan : "))
    
-    arr = list(map(int, input(f"\nMasukkan deret bilangan tersebut ({n}) : ").rstrip().split()))
+    arr = list(map(int, input(f"\nMasukkan deret bilangan tersebut ({n}) : ").rstrip().split()[:n]))
     
     plusMinus(arr)
 
